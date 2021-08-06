@@ -14,7 +14,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:10
 ARG USERNAME=node
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
-ENV XSCLI="/workspaces/vscode-sap-hana-dev-env-for-running-hana-cli/XS_CLIENT00P_134-70001320"
+ENV XSCLI="/workspaces/vsc-sap-hana-mta-dev-env-node10x/XS_CLIENT00P_134-70001320"
 ENV PATH=$PATH:${XSCLI}/bin
 ENV npm config set registry https://registry.npmjs.org/
 
@@ -62,4 +62,4 @@ RUN apt-get update \
     && apt-get install --yes --no-install-recommends procps unzip \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir --parents ${XSCLI} \
-    && chown --recursive ${USERNAME}:${USERNAME} ${XSCLI} 
+    && chown --recursive ${USERNAME}:${USERNAME} ${XSCLI}

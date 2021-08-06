@@ -1,6 +1,7 @@
 ## Kick off your SAP HANA App Dev Env for running MTA by leverage VS Code Dev Container. Use this [.devcontainer](https://github.com/draschke/vscode-sap-hana-dev-env-for-running-hana-cli/tree/main/.devcontainer) for your projects if you want.
 <br/><br/>
 
+    - ![Two Dev Container](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node10x/blob/main/images/dev-container-two-monitors-10-and 14.png)
 ## Prerequisites
 - [Install Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
 
