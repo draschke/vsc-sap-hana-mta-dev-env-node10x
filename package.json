@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "object-assign": "^4.1.1",
+    "object-assign-deep": "^0.4.0"
+  }
+}

@@ -97,7 +97,7 @@
   // "postCreateCommand": "npm install && npm audit fix && npm install --prefix /workspaces/yourAppName/db && npm install --prefix /workspaces/yourAppName/js && npm start --prefix /workspaces/yourAppName/js && npm audit fix --prefix /workspaces/yourAppName/js && npm install --prefix /workspaces/yourAppName/web &&  npm start --prefix /workspaces/yourAppName/db",
 
   // "postCreateCommand": "yarn install",
-
+  "postCreateCommand": "bash -i -c 'nvm install --lts --latest-npm'",
   // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node"
 }
