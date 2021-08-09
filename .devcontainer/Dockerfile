@@ -51,7 +51,7 @@ RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
      @sap/generator-cap-project \
      @sap/generator-fiori \
      @sap/generator-hdb-project
-    #  hana-cli 
+    #  hana-cli (requires > node12)
 
 # # # Install extra tools for CAP development & deployment.
 RUN apt-get -y update && export DEBIAN_FRONTEND=noninteractive \
@@ -63,30 +63,4 @@ RUN apt-get -y update \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir --parents ${XSCLI} \
     && chown --recursive ${USERNAME}:${USERNAME} ${XSCLI}
-
-
-# Install Docker --> E: Unable to locate package containerd
-# RUN  apt-get -y update \
-#     && apt-get -y install curl \
-#     && apt-get -y install apt-transport-https \
-#     && apt-get -y install ca-certificates \
-#     && apt-get -y install gnupg \
-#     && apt-get -y install lsb-release 
-    
-#  RUN  apt-get -y update \
-#     && apt-get remove docker docker-engine docker.io containerd runc \
-#     && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg \
-#     echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
-#     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null \
-#     && apt-get -y update \
-#     && apt-get -y install docker-ce-cli
-#     # sudo apt install docker-ce
- 
-    # && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" \
-    # && apt-get -y update \
-    # && apt-get -y install docker-ce docker-ce-cli containerd.io \
-    # # && apt-get install -y docker.io \
-    # # && apt-get -y install -y docker-ce-cli \
-    # && apt-get -y install -y python python-pip \
-    # && pip install docker-compose \      
     
