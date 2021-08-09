@@ -1,6 +1,6 @@
-# Kick off your SAP HANA App Dev Env for running Hana-Cli (XS & CF) by leverage VS Code Dev Container. Use this [.devcontainer](https://github.com/draschke/vscode-sap-hana-dev-env-for-running-hana-cli/tree/main/.devcontainer) for your projects if you want
+# Kick off your SAP HANA App Dev Env for running Hana-Cli (XS & CF) by leverage VS Code Dev Container. Use this [.devcontainer](https://github.com/draschke/vscode-sap-hana-dev-env-for-running-hana-cli/tree/main/.devcontainer) for your Nodejs 10x projects, but its deprecated. If possible use this [Nodejs 14x](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node14x) project!
 
-## The approach of this project is to share the same required dev environment of VS Code Dev Containers with colleagues and making the start for new team members more easy. If possible use this project with [Nodejs 14x](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node14x)
+## The approach of this project is to share the same required dev environment of VS Code Dev Containers with colleagues and making the start for new team members more easy. 
 
 - [see 2 Dev Containers for node 10 & 14](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node10x/blob/main/images/2-monitors.png)
 
